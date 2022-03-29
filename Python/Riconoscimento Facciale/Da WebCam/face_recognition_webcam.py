@@ -1,7 +1,7 @@
 import face_recognition
 import cv2 # pip install opencv-python
 
-webcam = cv2.VideoCapture(1000) # 0 è la prima webcam del sistema, per me è 1000 (id -a, gid)
+webcam = cv2.VideoCapture(0) # 0 è la prima webcam del sistema, per me è 1000 (id -a, gid)
 
 image_file = input("Immagine target > ") # l'utente può inserire l'immagine target (know)
 target_image = face_recognition.load_image_file(image_file)
